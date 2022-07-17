@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_arrow_right.xml" value="0.2595" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_close_circle.xml" value="0.2595" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_heart.xml" value="0.2595" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_heart_fill.xml" value="0.2595" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_launcher_background.xml" value="0.135" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_surf_edu.xml" value="0.2595" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/font/font_style.xml" value="0.2833333333333333" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2595" />
       </map>
     </option>
