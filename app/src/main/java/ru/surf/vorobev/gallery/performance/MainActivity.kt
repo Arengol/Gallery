@@ -1,4 +1,4 @@
-package ru.surf.vorobev.gallery
+package ru.surf.vorobev.gallery.performance
 
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="ru.surf.vorobev.gallery.SplashFragment"
+        android:name="ru.surf.vorobev.gallery.performance.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment2"
-        android:name="ru.surf.vorobev.gallery.LoginFragment"
+        android:name="ru.surf.vorobev.gallery.performance.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
 </navigation>

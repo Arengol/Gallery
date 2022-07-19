@@ -1,4 +1,5 @@
-package ru.surf.vorobev.gallery
+package ru.surf.vorobev.gallery.performance
+
 
 import android.os.Bundle
 import android.os.Handler
@@ -9,12 +10,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.delay
-import ru.surf.vorobev.gallery.databinding.FragmentLoginBinding
+import ru.surf.vorobev.gallery.R
 import ru.surf.vorobev.gallery.databinding.FragmentSplashBinding
+
 @AndroidEntryPoint
 class SplashFragment : Fragment() {
-
     private lateinit var binding: FragmentSplashBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
