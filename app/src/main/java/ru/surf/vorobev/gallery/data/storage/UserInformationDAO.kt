@@ -16,4 +16,7 @@ interface UserInformationDAO {
 
     @Query("DELETE FROM userinformationentity")
     fun delete()
+
+    @Query("SELECT token FROM userinformationentity")
+    fun getToken(): String
 }

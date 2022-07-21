@@ -14,16 +14,19 @@ class UserInformationStorage (context: Context) {
     suspend fun get(): UserInformationEntity = withContext(Dispatchers.IO){
         dao.get()
     }
-    //TODO зменить параметры на объекты распарсенных JSON response и добавить сохранение фото через glide
     suspend fun insert(userInformation: UserInformationEntity) = withContext(Dispatchers.IO){
         dao.insert(userInformation)
     }
 
-    suspend fun delete(userInformation: UserInformationEntity) = withContext(Dispatchers.IO){
+    suspend fun delete() = withContext(Dispatchers.IO){
         dao.delete()
     }
 
-    suspend fun isEmpty() : Boolean  = withContext(Dispatchers.IO){
-        dao.get()?.let { false } ?: true
+    suspend fun getToken(): String = withContext(Dispatchers.IO){
+        dao.getToken()
     }
+
+ /*   suspend fun isEmpty() : Boolean  = withContext(Dispatchers.IO){
+        dao.get()?.let { false } ?: true
+    }*/
 }
