@@ -2,11 +2,11 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "1a1f3626448166519bdc26db52dd3fb7",
+    "identityHash": "840d15c9aa166d2599ea76485700fc93",
     "entities": [
       {
         "tableName": "UserInformationEntity",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `phone` TEXT, `email` TEXT, `city` TEXT, `first_name` TEXT NOT NULL, `last_name` TEXT NOT NULL, `avatar` TEXT NOT NULL, `about` TEXT NOT NULL, `token` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `phone` TEXT, `email` TEXT, `city` TEXT, `first_name` TEXT, `last_name` TEXT, `avatar` TEXT, `about` TEXT, `token` TEXT NOT NULL, PRIMARY KEY(`id`))",
         "fields": [
           {
             "fieldPath": "id",
@@ -36,25 +36,25 @@
             "fieldPath": "firstName",
             "columnName": "first_name",
             "affinity": "TEXT",
-            "notNull": true
+            "notNull": false
           },
           {
             "fieldPath": "lastName",
             "columnName": "last_name",
             "affinity": "TEXT",
-            "notNull": true
+            "notNull": false
           },
           {
             "fieldPath": "avatar",
             "columnName": "avatar",
             "affinity": "TEXT",
-            "notNull": true
+            "notNull": false
           },
           {
             "fieldPath": "about",
             "columnName": "about",
             "affinity": "TEXT",
-            "notNull": true
+            "notNull": false
           },
           {
             "fieldPath": "token",
@@ -76,7 +76,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1a1f3626448166519bdc26db52dd3fb7')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '840d15c9aa166d2599ea76485700fc93')"
     ]
   }
 }

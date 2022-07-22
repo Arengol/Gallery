@@ -1,4 +1,4 @@
-package ru.surf.vorobev.gallery.domain
+package ru.surf.vorobev.gallery.data.storage
 
 import android.content.Context
 import androidx.room.Room
@@ -11,7 +11,7 @@ class UserInformationStorage (context: Context) {
     private val UserInfoDatabase = Room.databaseBuilder(context, UserInformationDatabase::class.java, "userinformation").build()
     private val dao = UserInfoDatabase.userInformationDAO()
 
-    suspend fun get(): UserInformationEntity = withContext(Dispatchers.IO){
+    suspend fun get(): UserInformationEntity? = withContext(Dispatchers.IO){
         dao.get()
     }
     suspend fun insert(userInformation: UserInformationEntity) = withContext(Dispatchers.IO){
@@ -27,6 +27,6 @@ class UserInformationStorage (context: Context) {
     }
 
  /*   suspend fun isEmpty() : Boolean  = withContext(Dispatchers.IO){
-        dao.get()?.let { false } ?: true
+        UserInfoDao.get()?.let { false } ?: true
     }*/
 }

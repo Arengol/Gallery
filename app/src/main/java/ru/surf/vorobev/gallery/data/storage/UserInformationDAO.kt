@@ -9,7 +9,7 @@ import ru.surf.vorobev.gallery.data.entity.UserInformationEntity
 @Dao
 interface UserInformationDAO {
     @Query("SELECT * FROM userinformationentity")
-    fun get(): UserInformationEntity
+    fun get(): UserInformationEntity?
 
     @Insert
     fun insert(info:UserInformationEntity)

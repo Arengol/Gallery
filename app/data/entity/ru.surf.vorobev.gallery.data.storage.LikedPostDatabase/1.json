@@ -2,11 +2,11 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "ae44766e58b3b0d5241321b6682cf9b5",
+    "identityHash": "c6e4857948d5b97f09568e38ebce3da8",
     "entities": [
       {
         "tableName": "LikedPostEntity",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `title` TEXT NOT NULL, `content` TEXT NOT NULL, `photoUri` TEXT NOT NULL, `publicationDate` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `title` TEXT NOT NULL, `content` TEXT NOT NULL, `photoUrl` TEXT NOT NULL, `publicationDate` INTEGER NOT NULL, `likedDate` INTEGER NOT NULL, PRIMARY KEY(`id`))",
         "fields": [
           {
             "fieldPath": "id",
@@ -27,14 +27,20 @@
             "notNull": true
           },
           {
-            "fieldPath": "photoUri",
-            "columnName": "photoUri",
+            "fieldPath": "photoUrl",
+            "columnName": "photoUrl",
             "affinity": "TEXT",
             "notNull": true
           },
           {
             "fieldPath": "publicationDate",
             "columnName": "publicationDate",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "likedDate",
+            "columnName": "likedDate",
             "affinity": "INTEGER",
             "notNull": true
           }
@@ -52,7 +58,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ae44766e58b3b0d5241321b6682cf9b5')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'c6e4857948d5b97f09568e38ebce3da8')"
     ]
   }
 }

@@ -6,7 +6,6 @@ import androidx.room.TypeConverters
 import ru.surf.vorobev.gallery.data.entity.UserInformationEntity
 
 @Database(entities = [UserInformationEntity::class], version = 1)
-@TypeConverters(URIConverter::class)
 abstract class UserInformationDatabase: RoomDatabase() {
     abstract fun userInformationDAO(): UserInformationDAO
 }

@@ -4,7 +4,7 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-data class AuthInfoDTO (
+data class AuthInfoResponse (
     @Json(name = "token") val token: String,
-    @Json(name = "user_info") val userInfo: UserInfoDTO
+    @Json(name = "user_info") val userInfo: UserInfoResponse
         )

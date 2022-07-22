@@ -6,7 +6,7 @@ import androidx.room.TypeConverters
 import ru.surf.vorobev.gallery.data.entity.LikedPostEntity
 
 @Database(entities = [LikedPostEntity::class], version = 1)
-@TypeConverters(DateConverter::class, URIConverter::class)
+//@TypeConverters(DateConverter::class)
 abstract class LikedPostDatabase: RoomDatabase() {
     abstract fun likedPostDAO(): LikedPostDAO
 }
