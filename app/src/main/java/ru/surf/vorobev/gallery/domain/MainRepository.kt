@@ -16,9 +16,9 @@ import ru.surf.vorobev.gallery.util.*
 import java.util.*
 import javax.inject.Inject
 
-class MainRepository (val likedPostStorage: LikedPostStorage,
-                      val userInformationStorage: UserInformationStorage,
-                      val networkRepository: NetworkRepository) {
+class MainRepository (private val likedPostStorage: LikedPostStorage,
+                      private val userInformationStorage: UserInformationStorage,
+                      private val networkRepository: NetworkRepository) {
 
 
     suspend fun isLogin(): Boolean = userInformationStorage.getToken()?.let{true} ?: false
@@ -41,8 +41,8 @@ class MainRepository (val likedPostStorage: LikedPostStorage,
        return result?.let {getUserDTO(result)}
     }
 
-    suspend fun getPosts():ResultWrapper<List<PostDTO>> {
-        val response = networkRepository.getPosts(userInformationStorage.getToken())
+    suspend fun getPosts(token: String):ResultWrapper<List<PostDTO>> {
+        val response = networkRepository.getPosts(token)
         return when(response){
             is ResultWrapper.Success -> {
                 val result = mutableListOf<PostDTO>()
@@ -70,8 +70,10 @@ class MainRepository (val likedPostStorage: LikedPostStorage,
         return result
     }
 
-    suspend fun logout():ResultWrapper<Unit>{
-        val response = networkRepository.logout(userInformationStorage.getToken())
+    suspend fun getLikedPostID():List<Int> = likedPostStorage.getAllId()
+
+    suspend fun logout(token: String):ResultWrapper<Unit>{
+        val response = networkRepository.logout(token)
         return when(response){
             is ResultWrapper.Success -> {
                 userInformationStorage.delete()

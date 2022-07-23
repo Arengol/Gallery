@@ -11,5 +11,5 @@ data class PostDTO (
     //TODO !!!! check
     val photoUrl: String,
     val publicationDate: Long,
-    val liked: Boolean
+    var liked: Boolean
     )

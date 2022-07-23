@@ -16,6 +16,8 @@ import ru.surf.vorobev.gallery.domain.MainRepository
 import ru.surf.vorobev.gallery.network.NetworkRepository
 import ru.surf.vorobev.gallery.network.NetworkRepositoryImpl
 import ru.surf.vorobev.gallery.network.ServerApi
+import ru.surf.vorobev.gallery.performance.viewmodel.MainViewModel
+import ru.surf.vorobev.gallery.performance.viewmodel.MainViewModelImpl
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -48,4 +50,6 @@ class Module {
     @Provides
     fun provideMainRepository(likedPostStorage:LikedPostStorage, userInformationStorage: UserInformationStorage, networkRepository: NetworkRepository): MainRepository = MainRepository(likedPostStorage, userInformationStorage, networkRepository)
 
+    @Provides
+    fun provideMainViewModel(mainRepository: MainRepository):MainViewModel = MainViewModelImpl(mainRepository)
 }
