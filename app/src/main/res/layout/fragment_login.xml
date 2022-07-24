@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".performance.fragment.LoginFragment">
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,7 +20,7 @@
         android:layout_marginTop="112dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="Логин"
+        android:hint="@string/login"
         app:errorEnabled="true"
         app:errorIconDrawable="@null"
         style="@style/DefaultTextLayout"
@@ -44,7 +43,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         app:errorEnabled="true"
-        android:hint="Пароль"
+        android:hint="@string/password"
         app:passwordToggleEnabled="true"
         app:passwordToggleDrawable="@drawable/ic_password_selector"
         style="@style/DefaultTextLayout">
@@ -74,7 +73,7 @@
         android:layout_marginTop="648dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        app:textBtn="Вход"
+        app:textBtn="@string/login_text"
         app:isLoading="false"
         />
 
