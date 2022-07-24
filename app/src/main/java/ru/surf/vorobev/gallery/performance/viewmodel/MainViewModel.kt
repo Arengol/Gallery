@@ -14,11 +14,12 @@ interface MainViewModel {
     fun isAuthorized()
     fun login(phone: String, password: String, context: Context)
     fun logout()
-   // fun getUserInfo()
+    fun deleteLikedPostReq(id: Int)
     fun getLikedPost()
     fun addLikedPost(id: Int, context: Context)
-    fun deleteLikedPost(id: Int)
+    fun deleteLikedPost()
     fun getPost()
+    fun clearState()
     val state: LiveData<UiState>
     val userData: LiveData<UserDTO>
     val postData: LiveData<List<PostDTO>>

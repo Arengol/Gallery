@@ -7,5 +7,5 @@ sealed interface UiState {
     object InvalidLoginOrPass: UiState
     object Loading: UiState
     object DataError: UiState
-    object NoSearchResult: UiState
+    object DeletLikeRequest: UiState
 }

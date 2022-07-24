@@ -9,6 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray_text_field">#FFFBFBFB</color>
     <color name="gray_text">#FFB0B0B0</color>
+    <color name="gray_header">#FFB3B3B3</color>
     <color name="red_text">#FFFF002E</color>
     <color name="red_toast">#FFFF4545</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray_stroke">#FFDFDFDF</color>
 </resources>

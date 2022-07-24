@@ -2,23 +2,77 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph.xml"
+    android:id="@+id/nav_graph"
     app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="ru.surf.vorobev.gallery.performance.SplashFragment"
+        android:name="ru.surf.vorobev.gallery.performance.fragment.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
-            android:id="@+id/action_splashFragment_to_loginFragment2"
-            app:destination="@id/loginFragment2"
-            app:popUpTo="@id/nav_graph.xml"
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/nav_graph"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
-        android:id="@+id/loginFragment2"
-        android:name="ru.surf.vorobev.gallery.performance.LoginFragment"
+        android:id="@+id/loginFragment"
+        android:name="ru.surf.vorobev.gallery.performance.fragment.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="ru.surf.vorobev.gallery.performance.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_likedPostFragment"
+            app:destination="@id/likedPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="ru.surf.vorobev.gallery.performance.fragment.UserInfoFragment"
+        android:label="fragment_user_info"
+        tools:layout="@layout/fragment_user_info" >
+        <action
+            android:id="@+id/action_userInfoFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment" />
+        <action
+            android:id="@+id/action_userInfoFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_userInfoFragment_to_likedPostFragment"
+            app:destination="@id/likedPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/likedPostFragment"
+        android:name="ru.surf.vorobev.gallery.performance.fragment.LikedPostFragment"
+        android:label="fragment_liked_post"
+        tools:layout="@layout/fragment_liked_post" >
+        <action
+            android:id="@+id/action_likedPostFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_likedPostFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+    </fragment>
 </navigation>

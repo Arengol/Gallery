@@ -11,7 +11,10 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
-        <item name="android:windowLightStatusBar">true</item>
         <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi = "31">@color/transparent</item>
+        <item name="snackbarStyle">@style/SnackbarStyle</item>
+        <item name="snackbarTextViewStyle">@style/SnackbarText</item>
     </style>
 </resources>

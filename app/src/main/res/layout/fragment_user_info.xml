@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".performance.fragment.UserInfoFragment">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="38dp"
+        android:text="Профиль"
+        android:textAppearance="@style/Text.SemiBold.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/AvatarImageView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/firstName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="90dp"
+        tools:text="Александра"
+        android:textColor="@color/black"
+        android:textAppearance="@style/Text.Medium.18"
+        app:layout_constraintStart_toEndOf="@+id/AvatarImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/lastName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        tools:text="Новикова"
+        android:textColor="@color/black"
+        android:textAppearance="@style/Text.Medium.18"
+        app:layout_constraintStart_toEndOf="@+id/AvatarImageView"
+        app:layout_constraintTop_toBottomOf="@+id/firstName_tv" />
+    <TextView
+        android:id="@+id/about_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:textColor="@color/gray_header"
+        android:textAppearance="@style/Text.LightItalic.12"
+        app:layout_constraintStart_toEndOf="@+id/AvatarImageView"
+        app:layout_constraintTop_toBottomOf="@+id/lastName_tv" />
+
+
+    <ru.surf.vorobev.gallery.performance.ProgressButton
+        android:id="@+id/logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        app:isLoading="false"
+        app:textBtn="Выйти"
+        app:layout_constraintBottom_toTopOf="@+id/tabLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        style="@style/TabStyle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_home"
+            android:text="Главная"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_heart_black"
+            android:text="Избранное"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_emotion_happy"
+            android:text="Профиль"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AvatarImageView">
+
+        <TextView
+            android:id="@+id/city_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Город"
+            android:textColor="@color/gray_header"
+            android:textAppearance="@style/Text.Regular.12"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/city_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textAppearance="@style/Text.Regular.18"
+            android:layout_marginStart="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <TextView
+            android:id="@+id/phone_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Телефон"
+            android:textColor="@color/gray_header"
+            android:textAppearance="@style/Text.Regular.12"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/phone_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textAppearance="@style/Text.Regular.18"
+            android:layout_marginStart="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/mail_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Почта"
+            android:textColor="@color/gray_header"
+            android:textAppearance="@style/Text.Regular.12"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/mail_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textAppearance="@style/Text.Regular.18"
+            android:layout_marginStart="15dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

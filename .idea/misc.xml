@@ -7,12 +7,30 @@
         <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_close_circle.xml" value="0.2595" />
         <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_heart.xml" value="0.2595" />
         <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_heart_fill.xml" value="0.2595" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_hide_password.xml" value="0.2345" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_hide_password_stroke.xml" value="0.1155" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_home.xml" value="0.124" />
         <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_launcher_background.xml" value="0.135" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_loader.xml" value="0.124" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_loader_black.xml" value="0.124" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_password_selector.xml" value="0.2345" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_refresh.xml" value="0.124" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_search.xml" value="0.124" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_search_eye.xml" value="0.124" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_search_gray.xml" value="0.124" />
         <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/ic_surf_edu.xml" value="0.2595" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/drawable/tint_selector.xml" value="0.224" />
         <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/font/font_style.xml" value="0.2833333333333333" />
         <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/layout/fragment_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/layout/fragment_liked_post.xml" value="0.2477355072463768" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/layout/fragment_login.xml" value="0.264" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/layout/fragment_main.xml" value="0.264" />
         <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/layout/fragment_splash.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/layout/fragment_user_info.xml" value="0.264" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/layout/menu.xml" value="0.1" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/layout/progres_button.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/layout/recycler_adapter.xml" value="0.6" />
+        <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/menu/menu.xml" value="0.264" />
         <entry key="..\:/Users/Worob/source/android/Gallery/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2595" />
       </map>
     </option>

@@ -51,5 +51,5 @@ class Module {
     fun provideMainRepository(likedPostStorage:LikedPostStorage, userInformationStorage: UserInformationStorage, networkRepository: NetworkRepository): MainRepository = MainRepository(likedPostStorage, userInformationStorage, networkRepository)
 
     @Provides
-    fun provideMainViewModel(mainRepository: MainRepository):MainViewModel = MainViewModelImpl(mainRepository)
+    fun provideMainViewModel(mainRepository: MainRepository):MainViewModel = MainViewModelImpl.Builder.create(mainRepository)
 }
