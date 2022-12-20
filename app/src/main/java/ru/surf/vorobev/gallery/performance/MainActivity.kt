@@ -1,10 +1,6 @@
 package ru.surf.vorobev.gallery.performance
 
-import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import androidx.activity.ComponentActivity
 import androidx.fragment.app.FragmentActivity
 import dagger.hilt.android.AndroidEntryPoint
 import ru.surf.vorobev.gallery.databinding.ActivityMainBinding
